@@ -3,52 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Trevor Rice - Cybersecurity Career">
     <title>Trevor Rice - Cybersecurity Career</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to bottom, #0066ff, #004bb5);
+            color: #fff;
+            overflow-x: hidden;
         }
         header {
-            background-color: #003366;
-            color: #fff;
-            padding: 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            background: linear-gradient(to bottom, #004bb5, #003399);
+            color: #fff;
+            padding: 0 20px;
         }
         header h1 {
-            margin: 0;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .button-container {
-            text-align: center;
-            margin-top: 20px;
+        header p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
         }
         .button-container a {
-            display: inline-block;
-            background-color: #003366;
+            background-color: #0066ff;
             color: #fff;
             padding: 15px 30px;
-            font-size: 18px;
+            font-size: 1.2rem;
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
         }
         .button-container a:hover {
-            background-color: #00509e;
+            background-color: #004bb5;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
         }
         footer {
-            background-color: #003366;
+            background: #003399;
             color: #fff;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
         }
     </style>
 </head>
@@ -56,17 +85,19 @@
 
 <header>
     <h1>Trevor Rice - Cybersecurity Career</h1>
-    <p>Building a future in cybersecurity through strategic problem-solving and risk management expertise</p>
+    <p>Building a future in cybersecurity through strategic problem-solving and risk management expertise.</p>
+    <div class="button-container">
+        <a href="professional_statement.html">View My Professional Statement</a>
+    </div>
 </header>
 
-<div class="container">
-    <h2>Welcome to My Cybersecurity Career Page</h2>
-    <p>With a strong foundation in IT and a passion for cybersecurity, I am transitioning my skills into the cybersecurity field. Below, you can explore my professional statement to learn more about my goals, skills, and certifications as I build my career in this dynamic and critical industry.</p>
-
-    <div class="button-container">
-        <a href="professional-statement.html">View My Professional Statement</a>
-    </div>
-</div>
+<section>
+    <h2>Welcome</h2>
+    <p>
+        With a strong foundation in IT and a passion for cybersecurity, I am transitioning my skills into the cybersecurity field.
+        Explore my professional statement to learn more about my goals, skills, and certifications as I build my career in this dynamic and critical industry.
+    </p>
+</section>
 
 <footer>
     <p>Contact: trevor@ricefamily.com | Phone: (123) 456-7890</p>
