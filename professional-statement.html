@@ -3,91 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trevor Rice - Professional Statement</title>
+    <title>Professional Statement - Trevor Rice</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #111;
-            color: #fff;
+        /* General Reset */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #121212;
+            color: #fff;
             overflow-x: hidden;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 100px 20px;
+        h1, h2, h3, p {
+            margin: 0;
+        }
+
+        /* Parallax Effect */
+        .parallax {
+            background-image: url('https://www.example.com/your-image.jpg'); /* Add your image here */
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #f4a261;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1s ease-out forwards;
-        }
-
-        .statement {
-            font-size: 1.2rem;
-            color: #ddd;
-            margin: 20px 0;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1s ease-out 0.5s forwards;
-        }
-
-        .back-btn {
-            background-color: #f4a261;
             color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin-top: 30px;
-            display: inline-block;
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 1s ease-out 1s forwards;
         }
 
-        .back-btn:hover {
-            background-color: #e76f51;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
+        /* Floating Animation */
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
                 transform: translateY(0);
             }
         }
 
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Container Styling */
+        .container {
+            z-index: 2;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .container h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #FF6A00;
+        }
+
+        .container p {
+            font-size: 1.25rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            color: #ccc;
+        }
+
+        .container ul {
+            margin: 20px 0;
+            list-style-type: none;
+        }
+
+        .container li {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #ccc;
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #FF6A00;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #FF3A00;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            color: #bbb;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            h1 {
+            .container h1 {
                 font-size: 2rem;
             }
-            .statement {
+
+            .container p {
                 font-size: 1rem;
+            }
+
+            .btn {
+                padding: 12px 25px;
             }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Professional Statement</h1>
-    <div class="statement">
-        <p><strong>Strengths:</strong> Negotiation, Strategic Planning, Market Analysis, Customer Relationship Building</p>
-        <p><strong>Values:</strong> Innovation, Client Satisfaction, Growth, Integrity</p>
-        <p><strong>What Interests Me:</strong> The intersection of technology, security, and business development. My goal is to leverage my experience in real estate and business to support organizations' growth while maintaining secure, ethical operations.</p>
-        <p><strong>Audience:</strong> Cybersecurity recruiters, technology-focused companies, organizations seeking strategic business development leadership.</p>
-        <p><strong>Supporting Organizations' Goals:</strong> My background in business development, real estate, and strategic planning equips me to bring both technical and market-driven insights to any organization. I aim to build solutions that are secure, scalable, and aligned with the organization’s mission.</p>
+    <!-- Parallax Section -->
+    <div class="parallax">
+        <div class="container floating">
+            <h1>Professional Statement</h1>
+            <p>Welcome to my professional statement, where I share my strengths, values, and motivations as I pursue my career goals in real estate and business development.</p>
+        </div>
     </div>
-    <a href="index.html" class="back-btn">Back to Portfolio</a>
-</div>
 
-</body>
-</html>
+    <!-- Professional Statement Content -->
+    <div class="container">
+        <h2>My Strengths</h2>
+        <p>Over the course of my career, I have developed a strong set of skills that have contributed to my success. These include:</p>
+     
