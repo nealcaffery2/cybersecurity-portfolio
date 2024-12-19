@@ -3,149 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Statement - Trevor Rice</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Trevor Rice - Professional Statement">
+    <title>Trevor Rice - Professional Statement</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link to your external CSS here -->
     <style>
-        /* General Reset */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+            background-color: #f4f4f4;
         }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #121212;
+        header {
+            background-color: #003366;
             color: #fff;
-            overflow-x: hidden;
+            padding: 20px;
+            text-align: center;
         }
-
-        h1, h2, h3, p {
+        header h1 {
             margin: 0;
         }
-
-        /* Parallax Effect */
-        .parallax {
-            background-image: url('https://www.example.com/your-image.jpg'); /* Add your image here */
-            height: 100vh;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-
-        /* Floating Animation */
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        .floating {
-            animation: float 3s ease-in-out infinite;
-        }
-
-        /* Container Styling */
         .container {
-            z-index: 2;
-            padding: 20px;
-            max-width: 900px;
+            width: 80%;
             margin: 0 auto;
-        }
-
-        .container h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            color: #FF6A00;
-        }
-
-        .container p {
-            font-size: 1.25rem;
-            margin-bottom: 20px;
-            line-height: 1.8;
-            color: #ccc;
-        }
-
-        .container ul {
-            margin: 20px 0;
-            list-style-type: none;
-        }
-
-        .container li {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            color: #ccc;
-        }
-
-        /* Button Styling */
-        .btn {
-            background-color: #FF6A00;
-            padding: 15px 30px;
-            font-size: 1.2rem;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #FF3A00;
-            transform: scale(1.05);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1a1a1a;
             padding: 20px;
+        }
+        .statement {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .statement h2 {
+            color: #003366;
+        }
+        .statement p {
+            line-height: 1.6;
+            color: #333;
+        }
+        footer {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px;
             text-align: center;
-            color: #bbb;
-        }
-
-        /* Smooth Scroll */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container h1 {
-                font-size: 2rem;
-            }
-
-            .container p {
-                font-size: 1rem;
-            }
-
-            .btn {
-                padding: 12px 25px;
-            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Parallax Section -->
-    <div class="parallax">
-        <div class="container floating">
-            <h1>Professional Statement</h1>
-            <p>Welcome to my professional statement, where I share my strengths, values, and motivations as I pursue my career goals in real estate and business development.</p>
-        </div>
-    </div>
+<header>
+    <h1>Trevor Rice - Professional Statement</h1>
+    <p>Shaping the future of real estate through innovative strategies and client-focused solutions</p>
+</header>
 
-    <!-- Professional Statement Content -->
-    <div class="container">
-        <h2>My Strengths</h2>
-        <p>Over the course of my career, I have developed a strong set of skills that have contributed to my success. These include:</p>
-     
+<div class="container">
+    <section class="statement">
+        <h2>About Me</h2>
+        <p>As a seasoned real estate professional with over 8 years of experience, I specialize in residential and commercial real estate, with a strong focus on investment properties. I have a proven track record of success in both B2B and B2C environments, consistently delivering high-value transactions for my clients.</p>
+
+        <p>My career has been built on a foundation of hard work, strategic thinking, and a deep understanding of the market. I have a passion for helping clients achieve their real estate goals, whether it's buying their dream home, securing profitable investments, or navigating complex commercial deals.</p>
+
+        <h2>My Vision</h2>
+        <p>Looking forward, I am committed to expanding my portfolio and continuing to provide innovative solutions for my clients. My goal is to secure $10M+ in real estate transactions annually, focusing on high-end residential, commercial, and government contracting opportunities.</p>
+
+        <p>I am also dedicated to building a legacy through property management, consulting, and real estate services, creating long-term value for my clients and partners.</p>
+    </section>
+</div>
+
+<footer>
+    <p>Contact: trevor@ricefamily.com | Phone: (123) 456-7890</p>
+</footer>
+
+</body>
+</html>
