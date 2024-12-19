@@ -4,41 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trevor Rice - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #111;
+            color: #fff;
+            overflow-x: hidden;
         }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            text-align: center;
         }
+
         h1 {
-            text-align: center;
-            color: #333;
+            font-size: 3rem;
+            color: #f4a261;
+            margin-top: 100px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
         }
+
+        p {
+            font-size: 1.2rem;
+            color: #ddd;
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+
         .btn {
-            background-color: #4CAF50;
+            background-color: #f4a261;
             color: white;
-            padding: 10px 20px;
-            text-align: center;
+            padding: 15px 30px;
+            border-radius: 50px;
             text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 30px;
             display: inline-block;
-            border-radius: 5px;
-            font-size: 1.1em;
-            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 1s forwards;
         }
+
         .btn:hover {
-            background-color: #45a049;
+            background-color: #e76f51;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Styling */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
@@ -47,12 +88,8 @@
 <div class="container">
     <h1>Welcome to My Portfolio</h1>
     <p>Hi, I'm Trevor Rice, a dynamic real estate professional with over 8 years of experience in sales, business development, and market analysis.</p>
-    <p>Click below to learn more about my professional statement and how my skills can support your organization's cybersecurity needs:</p>
-    
-    <!-- Button to link to Professional Statement -->
     <a href="professional-statement.html" class="btn">View My Professional Statement</a>
 </div>
 
 </body>
 </html>
-
