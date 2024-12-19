@@ -4,75 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trevor Rice - Professional Statement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            background-color: #111;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            overflow-x: hidden;
         }
+
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 20px;
+            text-align: center;
         }
+
         h1 {
-            text-align: center;
-            color: #333;
+            font-size: 3rem;
+            color: #f4a261;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out forwards;
         }
-        h2 {
-            color: #4CAF50;
+
+        .statement {
+            font-size: 1.2rem;
+            color: #ddd;
+            margin: 20px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 0.5s forwards;
         }
-        p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-        .btn {
-            background-color: #4CAF50;
+
+        .back-btn {
+            background-color: #f4a261;
             color: white;
-            padding: 10px 20px;
-            text-align: center;
+            padding: 15px 30px;
+            border-radius: 50px;
             text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 30px;
             display: inline-block;
-            border-radius: 5px;
-            font-size: 1.1em;
-            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s ease-out 1s forwards;
         }
-        .btn:hover {
-            background-color: #45a049;
+
+        .back-btn:hover {
+            background-color: #e76f51;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .statement {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Professional Statement - Trevor Rice</h1>
-
-    <h2>Strengths</h2>
-    <p><strong>Strong Negotiation and Sales Skills:</strong> With over 8 years in real estate, I have developed exceptional negotiation and sales abilities, enabling me to close multimillion-dollar deals and build long-term client relationships.</p>
-    <p><strong>Strategic Planning and Business Development:</strong> My experience spans strategic planning, market analysis, and developing tailored solutions to drive business growth, particularly in investment real estate.</p>
-    <p><strong>Project Management & Leadership:</strong> I have demonstrated strong leadership skills in managing projects, leading teams, and handling complex transactions from acquisition to disposition.</p>
-
-    <h2>Values</h2>
-    <p><strong>Integrity in Dealings:</strong> I prioritize transparency, honesty, and ethical conduct in all my professional interactions, ensuring trust and long-term success for all parties involved.</p>
-    <p><strong>Commitment to Client Success:</strong> I am deeply committed to understanding and fulfilling my clients' needs, which has been a cornerstone of my success in sales and acquisitions.</p>
-
-    <h2>What Interests Me About Cybersecurity</h2>
-    <p>The growing reliance on technology and digital infrastructures has increased the need for robust security measures. I am excited by the challenge of safeguarding organizations from emerging threats and contributing to the protection of critical information and assets.</p>
-
-    <h2>Audience for My Professional Statement</h2>
-    <p>This statement is targeted at cybersecurity recruiters and organizations, including those in the tech industry, government sectors, and corporate entities looking for professionals who are passionate about cybersecurity and have a strong foundation in business, sales, and strategic operations.</p>
-
-    <h2>How My Strengths, Values, and Interests Support Security Goals</h2>
-    <p>With a background in business development, market analysis, and high-stakes negotiations, I am well-positioned to help organizations navigate complex cybersecurity challenges. My ability to think strategically and lead projects, combined with my strong values of integrity and client-focused solutions, will allow me to contribute to an organization’s security posture by identifying risks, developing mitigation strategies, and ensuring the safety of critical data.</p>
-
-    <a href="index.html" class="btn">Back to Home</a>
+    <h1>Professional Statement</h1>
+    <div class="statement">
+        <p><strong>Strengths:</strong> Negotiation, Strategic Planning, Market Analysis, Customer Relationship Building</p>
+        <p><strong>Values:</strong> Innovation, Client Satisfaction, Growth, Integrity</p>
+        <p><strong>What Interests Me:</strong> The intersection of technology, security, and business development. My goal is to leverage my experience in real estate and business to support organizations' growth while maintaining secure, ethical operations.</p>
+        <p><strong>Audience:</strong> Cybersecurity recruiters, technology-focused companies, organizations seeking strategic business development leadership.</p>
+        <p><strong>Supporting Organizations' Goals:</strong> My background in business development, real estate, and strategic planning equips me to bring both technical and market-driven insights to any organization. I aim to build solutions that are secure, scalable, and aligned with the organization’s mission.</p>
+    </div>
+    <a href="index.html" class="back-btn">Back to Portfolio</a>
 </div>
 
 </body>
